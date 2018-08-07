@@ -30,6 +30,8 @@ ifneq ($(TARGET_DISPLAY_SHIFT_VERTICAL),)
     LOCAL_CFLAGS += -DDISPLAY_SHIFT_VERTICAL=$(TARGET_DISPLAY_SHIFT_VERTICAL)
 endif
 
+    LOCAL_CFLAGS += -Wno-error
+
 LOCAL_ADDITIONAL_DEPENDENCIES := $(common_deps) $(kernel_deps)
 LOCAL_SRC_FILES               := core_interface.cpp \
                                  core_impl.cpp \

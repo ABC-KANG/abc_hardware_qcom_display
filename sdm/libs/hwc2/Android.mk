@@ -63,5 +63,7 @@ ifeq ($(TARGET_HAS_WIDE_COLOR_DISPLAY), true)
     LOCAL_CFLAGS += -DFEATURE_WIDE_COLOR
 endif
 
+    LOCAL_CFLAGS += -Wno-error
+
 include $(BUILD_SHARED_LIBRARY)
 endif

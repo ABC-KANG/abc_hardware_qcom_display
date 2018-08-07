@@ -31,6 +31,8 @@
 #include <utils/constants.h>
 #include <utils/debug.h>
 
+#include <errno.h>
+
 #include "hwc_debugger.h"
 #include "hwc_buffer_sync_handler.h"
 
